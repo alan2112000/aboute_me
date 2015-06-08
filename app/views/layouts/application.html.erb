@@ -2,21 +2,21 @@
 <html>
 <head>
   <title>AlanYu</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div class="col s3">
-  <%= render 'layouts/common/sidebar' %>
+<div class="row">
+  <%= render 'layouts/common/nav_bar' %>
 </div>
-
-<div class="col s9">
-<%= yield %>
-  <!-- Teal page content  -->
-<%= render 'layouts/common/footer' %>
+<div class="row">
+  <div class="row">
+    <%= yield %>
+    <!-- Teal page content  -->
+    <%= render 'layouts/common/footer' %>
+  </div>
 </div>
-
 </body>
 </html>
