@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: projects
+#
+#  id          :integer          not null, primary key
+#  name        :string
+#  description :text
+#  github_url  :string
+#  website_url :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  user_id     :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  github_url: MyString
+  website_url: MyString
+
+two:
+  name: MyString
+  description: MyText
+  github_url: MyString
+  website_url: MyString
