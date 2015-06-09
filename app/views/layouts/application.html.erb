@@ -8,23 +8,15 @@
 </head>
 <body>
 
-
-<div class="row">
+<div class="row fixed">
   <%= render 'layouts/common/nav_bar' %>
 </div>
-
 <div class="row">
-  <div class="col s3 hide-on-small-only m3 l2">
-    <div class="taps-wrapper">
-    <%= render 'layouts/common/sidebar' %>
-    </div>
-  </div>
-
-  <div class="col s9">
+  <div class="row">
     <%= yield %>
+    <!-- Teal page content  -->
     <%= render 'layouts/common/footer' %>
   </div>
 </div>
-
 </body>
 </html>

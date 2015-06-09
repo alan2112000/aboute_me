@@ -4,7 +4,5 @@
 
 $ ->
   $('.parallax').parallax()
-  $('.scrollspy').scrollspy()
-#  $('.taps-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
-
+  $('.scrollspy').scrollSpy
 
