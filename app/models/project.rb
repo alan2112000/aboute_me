@@ -10,6 +10,9 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  user_id     :integer
+#  start_time  :date
+#  end_time    :date
+#  image_name  :string
 #
 
 class Project < ActiveRecord::Base
