@@ -25,6 +25,8 @@ gem 'materialize-sass'
 gem 'rails_admin', '~> 0.6.7'
 gem 'devise'
 gem 'pg'
+gem 'puma'
+gem 'rails_12factor'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
