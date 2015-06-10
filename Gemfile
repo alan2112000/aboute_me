@@ -13,8 +13,9 @@ gem 'materialize-sass'
 gem 'rails_admin', '~> 0.6.7'
 gem 'devise'
 gem 'pg'
-gem 'puma'
+gem 'passenger'
 gem 'rails_12factor'
+gem 'capistrano'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -25,7 +26,8 @@ gem 'rails_12factor'
 
 group :development, :test do
   gem 'annotate', '~> 2.6.6'
-# gem 'capistrano-rails', group: :development
+  # gem 'capistrano-passenger'
+  # gem 'capistrano-rails'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
