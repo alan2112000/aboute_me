@@ -25,11 +25,12 @@ server '128.199.133.251', user: 'deploy', roles: %w{web}, my_property: :my_value
 #
 # Global options
 # --------------
- set :ssh_options, {
-   forward_agent: false,
-   auth_methods: %w(password),
-   keys: %w(/home/deploy/.ssh/id_rsa)
- }
+#  set :ssh_options, {
+#                      forward_agent: false,
+#                      auth_methods:  %w(password),
+#                      keys:          %w(/home/deploy/.ssh/id_rsa),
+#                      user:          'deploy'
+#                  }
 #
 # And/or per server (overrides global)
 # ------------------------------------

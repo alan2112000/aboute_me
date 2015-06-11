@@ -13,9 +13,8 @@ gem 'materialize-sass'
 gem 'rails_admin', '~> 0.6.7'
 gem 'devise'
 gem 'pg'
-gem 'passenger'
-gem 'rails_12factor'
 gem 'capistrano'
+gem  'therubyracer', platform: :ruby
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -26,8 +25,10 @@ gem 'capistrano'
 
 group :development, :test do
   gem 'annotate', '~> 2.6.6'
-  # gem 'capistrano-passenger'
-  # gem 'capistrano-rails'
+  gem 'capistrano-passenger'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
