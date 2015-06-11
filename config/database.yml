@@ -17,6 +17,10 @@ test:
   database: db/about_me_test
 
 production:
-  <<: *default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username: postgres
+  password: postgres
   database: db/about_me_production
 
